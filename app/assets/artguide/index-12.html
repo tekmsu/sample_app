@@ -40,6 +40,7 @@
 
 
 <script src="js/functions.js"></script>
+
   
   
   
@@ -287,217 +288,428 @@
 			</div>
 		</header>
 		
-		<article class="article">
-			
-			<header id="event-map" class="header-article-address">
-				<div class="header-content">
-					<a href="#" class="g-tag link-address g-tag-large">Музеи</a>
-					<h1>Государственная Третьяковская галерея на Крымском Валу</h1>	
+		<div class="b-section-search">
+			<div class="section-search-form">
+				<form method="post" action="#">
+					<fieldset class="fieldset-search-text">
+						<input type="search" placeholder="Быстрый поиск по персонам" name="" value="" />
+						<input class="btn btn-person" type="submit" name="" value="Искать" />
+					</fieldset>
 					
-				</div>
-				<a id="show-address-map" class="btn btn-address btn-show-map">Показать карту</a>
-				<div id="addresses" class="b-addresses">
-					<ul>
-						<li>
-							<h4>Адрес</h4>
-							Москва , Лаврушинский пер., 10
-						</li>
-						<li>
-							<h4>Телефон</h4>
-							+7 (495) 951 1362<br />
-							+7 (499)230-7788 
-						</li>
-						<li>
-							<h4>Сайт</h4>
-							<a class="link-address" href="#">www.tretyakovgallery.ru</a>
-						</li>
-						<li>
-							<h4>Режим работы</h4>
-							Пн Выходной<br />
-							Вт-Ср, Сб-Вс 10:00-18:00<br />
-							Чт, Пт 10:00-21:00
-						</li>
-						<li>
-							<h4>Вход</h4>
-							Взрослый билет – 300 руб.
-						</li>
-					</ul>
-					<a id="addresses-roll" class="btn-roll"></a>
-				</div>
-
-			</header>
-	
-	
-			<p>
-				Второе здание Третьяковской галереи. Здесь — русское искусство XX и XXI веков от мастеров русского авангарда (Михаила Ларионова, Наталии Гончаровой, Казимира Малевича и Василия Кандинского) до новейших течений. 
-			</p>
-			
-			<div class="article-gallery">
-				<div class="fotorama-container">
-					<div class="fotorama" data-nav="false" data-captions="false" data-arrows="false" data-loop="true" data-margin="0" data-width="100%" data-ratio="800/600">
-					  <img src="img/pic-6.jpg" data-caption="Зигмар Польке. Картофельный дом. 1967. Вид объекта в Музее современного искусства Мигрос, Цюрих. Фото: Stefan Altenburger Photography Zurich">
-					  <img src="http://s.fotorama.io/2.jpg" data-caption="2 photo caption">
-					  <img src="http://s.fotorama.io/3.jpg" data-caption="3 photo caption">
-					</div>
-				</div>
-				<div class="fotorama-footer clearfix">
-					<div id="fotorama-caption" class="fotorama-caption">1</div>
-					<div id="fotorama-counter" class="fotorama-counter">2</div>
-				</div>
-			</div>
-
+					<fieldset class="fieldset-search-params clearfix">
+						<label class="icheckbox icheckbox-event">
+							<input type="checkbox" name="" >
+						  	Новые
+						</label>
+						<label class="icheckbox icheckbox-event">
+							<input type="checkbox" name="" >
+						  	Популярные
+						</label>
+						<label class="icheckbox icheckbox-event">
+							<input type="checkbox" name="" >
+						  	Персоны
+						</label>
+						<label class="icheckbox icheckbox-event">
+							<input type="checkbox" name="" >
+						  	Группы
+						</label>
 						
-		</article>
-		
-		<footer class="footer-article clearfix">
-			<div class="b-article-share">
-				<ul class="article-share-list clearfix">
-					<li class="share-item share-item-fb">
-						<a class="btn-share-item" href="#">
-							<i class="share-item-icon"></i>
-							<span class="share-item-counter">125</span>
-						</a>
-					</li>
-					<li class="share-item share-item-vk">
-						<a class="btn-share-item" href="#">
-							<i class="share-item-icon"></i>
-							<span class="share-item-counter">125</span>
-						</a>
-					</li>
-					<li class="share-item share-item-tw">
-						<a class="btn-share-item" href="#">
-							<i class="share-item-icon"></i>
-							<span class="share-item-counter">125</span>
-						</a>
-					</li>
-					<li class="share-item share-item-pin">
-						<a class="btn-share-item" href="#">
-							<i class="share-item-icon"></i>
-							<span class="share-item-counter">125</span>
-						</a>
-					</li>
-				</ul>
+						
+						<div class="iselect iselect-person iselect-category-person">
+							<div class="iselect-header"></div>
+							<input class="iselect-value" type="hidden" name="" value="" />
+							<ul class="iselect-options-list">
+								<li data-option="Все категории"><a>Все категории</a></li>
+								<li data-option="Москва1"><a>Москва1</a></li>
+								<li data-option="Москва2"><a>Москва2</a></li>
+								<li data-option="Москва3"><a>Москва3</a></li>
+								<li data-option="Москва4"><a>Москва4</a></li>
+								<li data-option="Москва5"><a>Москва5</a></li>
+								<li data-option="Москва6"><a>Москва6</a></li>
+							</ul>
+						</div>
+					</fieldset>
+				</form>
 			</div>
-		
-		
-			
-			<div class="b-article-addition">
-				<header>
-					<h4>Теги</h4>
-				</header>
-				<ul class="tags-list clearfix">
-					<li><a href="#">выставка</a></li>
-					<li><a href="#">MoMA</a></li>
-					<li><a href="#">Музей современного искусства Нью-Йорка</a></li>
-					<li><a href="#">Зигмар Польке</a></li>
-					<li><a href="#">выставка</a></li>
-					<li><a href="#">Pretty Lights</a></li>
-					<li><a href="#">Альбомы недели</a></li>
-					<li><a href="#">INTERNETGHETTO</a></li>
-					<li><a href="#">Феннеш</a></li>
-				</ul>
-			</div>
-			
-			
-			
-			<div class="b-article-addition">
-				<div class="tabs-addition g-tabs">
-					<ul class="tabs clearfix">
-						<li class="sel" data-tab="future">
-							<a>Текущие и будущие события</a>
-						</li>
-						<li data-tab="last">
-							<a>Прошедшие события</a>
-						</li>
-					</ul>
+			<div class="section-search-result clearfix">
+				<table class="table-col-4 table-search-result table-search-result-person">
+					<tr class="tr-header">
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+					</tr>
 					
-					<div class="tabs-container">
-						<div class="tab-content" data-tab="future">
+					
+					<tr class="tr-body">
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+					</tr>
+					<tr class="tr-header">
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
 						
-							<ul class="articles-list articles-list-event articles-list-noborder">
-								<li class="article-item article-item-large">
-									<div class="article-info">
-										<time class="g-time">02.05.14 — 01.06.14</time>
-										<span class="g-time-left">закрывается через 3 дня</span>
-									</div>
-									<a href="#">
-										<figure class="article-image">
-											<img src="img/pic-4.jpg" width="170" height="170" alt="" />
-										</figure>
-										<h2 class="article-title">Как тролли срывали «Детей 404», да не сорвали</h2>
-									</a>
-									<div class="g-location g-location-large">
-										<a href="#">Российская государственнаяа библиотека для молодёжи</a>
-									</div>
-								</li>
-								<li class="article-item article-item-large">
-									<div class="article-info">
-										<time class="g-time">02.05.14 — 01.06.14</time>
-									</div>
-									<a href="#">
-										<figure class="article-image">
-											<img src="img/pic-4.jpg" width="170" height="170" alt="" />
-										</figure>
-										<h2 class="article-title">Как тролли срывали «Детей 404», да не сорвали</h2>
-									</a>
-									<div class="g-location g-location-large">
-										<a href="#">Российская государственнаяа библиотека для молодёжи</a>
-									</div>
-								</li>
-							</ul>
-							<a class="btn-more">Загрузить еще</a>
-						</div>
-						<div class="tab-content" data-tab="last">
-												
-							<ul class="articles-list articles-list-event articles-list-noborder">
-								<li class="article-item article-item-large">
-									<div class="article-info">
-										<time class="g-time">02.05.14 — 01.06.14</time>
-										<span class="g-time-left">закрывается через 3 дня</span>
-									</div>
-									<a href="#">
-										<figure class="article-image">
-											<img src="img/pic-4.jpg" width="170" height="170" alt="" />
-										</figure>
-										<h2 class="article-title">2Как тролли срывали «Детей 404», да не сорвали</h2>
-									</a>
-									<div class="g-location g-location-large">
-										<a href="#">Российская государственнаяа библиотека для молодёжи</a>
-									</div>
-								</li>
-								<li class="article-item article-item-large">
-									<div class="article-info">
-										<time class="g-time">02.05.14 — 01.06.14</time>
-									</div>
-									<a href="#">
-										<figure class="article-image">
-											<img src="img/pic-4.jpg" width="170" height="170" alt="" />
-										</figure>
-										<h2 class="article-title">2Как тролли срывали «Детей 404», да не сорвали</h2>
-									</a>
-									<div class="g-location g-location-large">
-										<a href="#">Российская государственнаяа библиотека для молодёжи</a>
-									</div>
-								</li>
-							</ul>
-							<a class="btn-more">Загрузить еще</a>
-						</div>
-
-					</div>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					
+					
+					<tr class="tr-body">
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+					</tr>
+					<tr class="tr-header">
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					
+					
+					<tr class="tr-body">
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+					</tr>
+					<tr class="tr-header">
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<a href="#" class="g-tag link-person">Art-weekend</a><br />
+									<a href="#" class="g-tag link-person">Выставки</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					
+					
+					<tr class="tr-body">
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/pic-3.jpg" width="190" height="190" alt="">
+								</figure>
+							</div>
+						</td>
+					</tr>
+					
+					
+					
+					
+					
+					
+					<tr class="tr-header">
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<span class="g-tag">Фотография</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<span class="g-tag">Фотография</span>,
+									<span class="g-tag">Фотография</span>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Одноназвание</h4>
+								<div class="article-info">
+									<span class="g-tag">Дизайн</span>,
+									<span class="g-tag">Фотография</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<h4 class="article-title">Константин Константинопольский</h4>
+								<div class="article-info">
+									<span class="g-tag">коллаж</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					
+					
+					<tr class="tr-body">
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/person-dummy.png" width="190" height="160" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/person-dummy.png" width="190" height="160" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/person-dummy.png" width="190" height="160" alt="">
+								</figure>
+							</div>
+						</td>
+						<td>
+							<div class="result-item">
+								<figure class="article-image">
+									<img src="img/person-dummy.png" width="190" height="160" alt="">
+								</figure>
+							</div>
+						</td>
+					</tr>
+					
+					
+					
+					
+					
+					
+				</table>
 				
-				
-				</div>
-				
-				
-				
-				
+				<a class="btn-more" href="#">Загрузить еще</a>
 			</div>
-			
-		</footer>
 		
 		
 		
 		
+		
+		</div>
+		
+
 		
 	</section>
 	<footer class="footer-page">
