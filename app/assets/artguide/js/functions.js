@@ -21,12 +21,15 @@ $(function() {
 	.on(clickEvent,".accordion .accordion-item-header", function(){
 		var $this_container = $(this).parent();
 		var $accordion_container = $(this).closest(".accordion");
-		if($this_container.hasClass("item-active"))
+		if($this_container.hasClass("item-active")){
+			$this_container.removeClass("item-active");
+			$this_container.find(".accordion-item-content").slideUp(300);
 			return false;
+		}
 		$accordion_container.find(".item-active").removeClass("item-active");
 		$this_container.addClass("item-active");
-		$accordion_container.find(".accordion-item-content").slideUp(200);
-		$this_container.find(".accordion-item-content").slideDown(200);
+		$accordion_container.find(".accordion-item-content").slideUp(300);
+		$this_container.find(".accordion-item-content").slideDown(300);
 	})
 
 	.on(clickEvent,"#tool-search", function(){
@@ -107,7 +110,7 @@ $(function() {
 	
 	
 	
-	$("#large-list li.article-large-item").hover(function(){
+	$("li.article-large-item").hover(function(){
 		$(this).find(".article-review").slideDown(200)
 	}, function(){
 		$(this).find(".article-review").slideUp(200)

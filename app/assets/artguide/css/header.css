@@ -19,6 +19,17 @@ header.header-page.fixed{
 	margin-left: -630px;
 	z-index: 20;
 }
+header.header-page.fixed:after{
+	content: "";
+	display: block;
+	border-bottom: 3px solid rgba(51,51,51,.1);
+	height: 0;
+	font-size: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+}
 header.header-page .b-site-search{
 	display: none;
 	background: #404040;

@@ -50,7 +50,6 @@ section.section-conatainer aside.aside-right .aside-container{
 	display: none;
 	position: relative;
 }
-.accordion .accordion-item.item-active .accordion-item-header a{cursor: default}
 .accordion .accordion-item.item-active .accordion-item-header a:before{background-position: 0 0}
 .accordion .accordion-item:first-child .accordion-item-content{display: block}
 
