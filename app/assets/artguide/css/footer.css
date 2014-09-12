@@ -1,0 +1,56 @@
+footer.footer-page{
+	background: #1a1a1a;
+	border-right: 1px solid #313131;
+	height: 130px;
+	color: #808080;
+}
+footer.footer-page a{color: #808080}
+footer.footer-page a:hover{color: #FFF}
+footer.footer-page .footer-top{
+	border-bottom: 1px solid #313131;
+	height: 48px;
+	font-size: 14px;
+	padding: 32px 20px 0 20px;
+	margin-bottom: 17px;
+}
+footer.footer-page nav.nav-bottom{float: left}
+footer.footer-page nav.nav-bottom ul li{
+	float: left;
+	margin-left: 26px;
+}
+footer.footer-page nav.nav-bottom ul li:first-child{margin: 0}
+
+footer.footer-page ul.social-list{float: right}
+footer.footer-page ul.social-list li{
+	float: left;
+	margin-left: 14px;
+}
+footer.footer-page ul.social-list li a{
+	float: left;
+	background: url("../img/icons.svg") no-repeat;
+	width: 18px;
+	height: 18px;
+}
+footer.footer-page ul.social-list li.social-fb a{background-position: 0 -89px}
+footer.footer-page ul.social-list li.social-vk a{background-position: -19px -89px}
+footer.footer-page ul.social-list li.social-tw a{background-position: -38px -89px}
+footer.footer-page ul.social-list li.social-rss a{background-position: -57px -89px}
+footer.footer-page ul.social-list li.social-fb a:hover{background-position: 0 -70px}
+footer.footer-page ul.social-list li.social-vk a:hover{background-position: -19px -70px}
+footer.footer-page ul.social-list li.social-tw a:hover{background-position: -38px -70px}
+footer.footer-page ul.social-list li.social-rss a:hover{background-position: -57px -70px}
+
+
+footer.footer-page .copyright{
+	float: left;
+	font-size: 11px;
+	letter-spacing: 0.6px;
+	white-space: nowrap;
+	padding: 0 0 0 20px;
+}
+footer.footer-page .copyright span{font-style: oblique}
+footer.footer-page .maker{
+	float: right;
+	font-size: 12px;
+	padding: 0 20px 0 0;
+}
