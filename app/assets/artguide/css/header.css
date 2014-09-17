@@ -85,17 +85,17 @@ header.header-page .section-name{
 
 
 
-header.header-page .tollbar{
+header.header-page .toolbar{
 	float: right;
 	margin-bottom: -1px;
 }
-header.header-page .tollbar ul li{
+header.header-page .toolbar ul.toolbar-list > li{
 	float: left;
 	border-left: 1px solid #e6e6e6;
 	font-size: 17px;
 	font-weight: bold;
 }
-header.header-page .tollbar ul li a{
+header.header-page .toolbar ul.toolbar-list > li > a{
 	float: left;
 	width: 70px;
 	height: 71px;
@@ -104,37 +104,60 @@ header.header-page .tollbar ul li a{
 	color: #808080;
 	position: relative;
 }
-header.header-page .tollbar ul li a:before{
+header.header-page .toolbar ul.toolbar-list > li > a:before{
 	content: "";
 	background: url("../img/icons.svg") no-repeat;
 }
-header.header-page .tollbar ul li a:hover,
-header.header-page .tollbar ul li a.tool-selected:hover{
+header.header-page .toolbar ul.toolbar-list > li > a:hover,
+header.header-page .toolbar ul.toolbar-list > li > a.tool-selected:hover{
 	background-color: #404040;
 	color: #FFF;
 }
-header.header-page .tollbar ul li a.tool-selected{background-color: #f3efec}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-selected{background-color: #f3efec}
 
 
-header.header-page .tollbar ul li a.tool-search{}
-header.header-page .tollbar ul li a.tool-search:before{
+
+
+
+
+header.header-page .toolbar ul.toolbar-list > li > a.tool-location{}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-location:before{
+	background-position: -92px -26px;
+	width: 14px;
+	height: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -9px 0 0 -7px;
+}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-location:hover:before{background-position: -92px -49px}
+
+
+
+
+
+
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search{}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search:before{
 	background-position: -27px -127px;
 	width: 17px;
 	height: 17px;
 	position: absolute;
-	top: 26px;
-	left: 26px;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -9px;
 }
-header.header-page .tollbar ul li a.tool-search:hover:before{background-position: -63px -127px}
-header.header-page .tollbar ul li a.tool-search.tool-selected:before{
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search:hover:before{background-position: -63px -127px}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:before{
 	background-position: 0 -127px;
 	width: 13px;
 	height: 13px;
-	top: 28px;
-	left: 28px;
+	top: 50%;
+	left: 50%;
+	margin: -7px 0 0 -7px;
 }
-header.header-page .tollbar ul li a.tool-search.tool-selected:hover:before{background-position: -14px -127px}
-header.header-page .tollbar ul li a.tool-menu{
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:hover:before{background-position: -14px -127px}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu{
 	height: 29px;
 	font-size: 10px;
 	line-height: 1;
@@ -143,7 +166,7 @@ header.header-page .tollbar ul li a.tool-menu{
 	color: #1a1a1a;
 	padding-top: 42px;
 }
-header.header-page .tollbar ul li a.tool-menu:before{
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:before{
 	background-position: 0 0;
 	width: 30px;
 	height: 22px;
@@ -151,8 +174,33 @@ header.header-page .tollbar ul li a.tool-menu:before{
 	top: 17px;
 	left: 19px;
 }
-header.header-page .tollbar ul li a.tool-menu:hover{color: #FFF}
-header.header-page .tollbar ul li a.tool-menu:hover:before{background-position: -30px 0}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover{color: #FFF}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover:before{background-position: -30px 0}
+
+header.header-page .toolbar ul.toolbar-list > li.location-container{position: relative}
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
+	display: none;
+	background: #1a1a1a;
+	width: 211px;
+	font-size: 14px;
+	font-weight: normal;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li{border-top: 1px solid #313131}
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li:first-child{border-top: none}
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li a{
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	padding: 11px 12px 11px 13px;
+}
+
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li a:hover{background-color: #252525}
+
+
+
 
 header.header-page .mobile-menu{display: none}
 
@@ -230,40 +278,36 @@ header.header-page a.mobile-menu:before{
 		height: 164px;
 	}
 	header.header-page .section-name{display: none}
-	header.header-page .tollbar{
+	header.header-page .toolbar{
 		width: 104px;
 		margin-bottom: 0;
 		position: absolute;
 		left: 0;
 		bottom: 0;
 	}
-	header.header-page .tollbar ul li{
+	header.header-page .toolbar ul.toolbar-list > li{
 		border: 1px solid #2b2b2b;
 		border-width: 1px 0 0;
 	}
-	header.header-page .tollbar ul li:last-child{display: none}
+	header.header-page .toolbar ul.toolbar-list > li:last-child{display: none}
 	
-	header.header-page .tollbar ul li a{
+	header.header-page .toolbar ul.toolbar-list > li > a{
 		width: 104px;
 		height: 89px;
 		line-height: 87px;
 	}
 	
-	header.header-page .tollbar ul li a.tool-selected {background-color: #404040}
+	header.header-page .toolbar ul.toolbar-list > li > a.tool-selected {background-color: #404040}
+	header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:before{background-position: -14px -127px}
 	
+	header.header-page .toolbar ul.toolbar-list > li > a.tool-location.tool-selected:before{background-position: -92px -49px}
 	
-	header.header-page .tollbar ul li a.tool-search:before{
-		top: 38px;
-		left: 44px;
+	header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
+		top: auto;
+		left: 100%;
+		bottom: 0;
 	}
-	header.header-page .tollbar ul li a.tool-search.tool-selected:before{
-		background-position: -14px -127px;
-		top: 42px;
-		left: 45px;
-	}
-	
-	
-	
+
 	header.header-page a.mobile-menu{
 		display: block;
 		float: left;

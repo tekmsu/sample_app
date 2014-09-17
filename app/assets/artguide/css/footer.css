@@ -13,6 +13,41 @@ footer.footer-page .footer-top{
 	padding: 32px 20px 0 20px;
 	margin-bottom: 17px;
 }
+
+footer.footer-page .footer-top .iselect-city{
+	float: left;
+	border-color: #313131;
+	width: 108px;
+	height: 28px;
+	margin: -4px 22px 0 0;
+}
+footer.footer-page .footer-top .iselect-city .iselect-header{
+	height: 28px;
+	line-height: 26px;
+	padding: 0 28px 0 12px;
+}
+footer.footer-page .footer-top .iselect-city .iselect-header:after{
+	background-position: -8px -6px;
+	right: 12px;
+	top: 12px;
+	opacity: 0.7;
+}
+footer.footer-page .footer-top .iselect.iselect-city.iselect-open .iselect-header:after{opacity: 1}
+footer.footer-page .footer-top .iselect.iselect-bottom ul.iselect-options-list{bottom: 29px}
+footer.footer-page .footer-top .iselect-city ul.iselect-options-list li a {
+    color: #fff;
+    display: block;
+    padding: 6px 12px 6px 13px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 footer.footer-page nav.nav-bottom{float: left}
 footer.footer-page nav.nav-bottom ul li{
 	float: left;

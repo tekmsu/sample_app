@@ -875,6 +875,7 @@ section.section-content article.article .article-simple-image figcaption{
 	width: 360px;
 	font: bold italic 13px/1.58 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
 	color: #6b6b6b;
+	text-align: left;
 }
 
 section.section-content article.article .article-simple-image.figcaption-right{
@@ -910,8 +911,7 @@ section.section-content article.article .article-content{margin: 50px 0 30px}
 
 section.section-content article.article .article-gallery{margin: 50px 0 30px}
 section.section-content article.article .article-gallery .fotorama-container{
-	border: 1px solid #f2f2f2;
-	margin: 0 -1px 16px;
+	margin: 0 0 16px;
 	position: relative;
 
 }
@@ -931,7 +931,7 @@ section.section-content article.article .article-gallery .fotorama-container .fo
 }
 section.section-content article.article .article-gallery .fotorama-container .fotorama_custom__arr:before{
 	content: "";
-	background: url("../img/arrow-dark.png") no-repeat;
+	background: url("../img/arrow-black.png") no-repeat;
 	width: 20px;
 	height: 12px;
 	position: absolute;
@@ -960,9 +960,11 @@ section.section-content article.article .article-gallery.article-gallery-wide{
 	margin-left: -110px;
 	margin-right: -110px;
 }
-
 section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--prev,
-section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--next{background: #f2f2f2}
+section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--next{
+	background: rgba(128,128,128,.5);
+	border-color: transparent;
+}
 section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--prev:hover,
 section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--next:hover{
 	background: #404040;
@@ -970,7 +972,10 @@ section.section-content article.article .article-gallery.article-gallery-wide .f
 }
 section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--prev{margin-left: 40px}
 section.section-content article.article .article-gallery.article-gallery-wide .fotorama-container .fotorama_custom__arr.fotorama_custom__arr--next{margin-right: 40px}
-
+section.section-content article.article .article-gallery.article-gallery-wide .fotorama-footer{
+	width: 700px;
+	margin: 0 auto;
+}
 
 section.section-content article.article .article-gallery .fotorama-footer{
 	font: bold italic 13px/1.58 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
@@ -1055,6 +1060,40 @@ section.section-content article.article .contact-map{
 	height: 430px;
 	margin-bottom: 10px;
 }
+
+
+
+
+
+
+section.section-content article.article .article-footnote{
+	border: 1px solid #e6e6e6;
+	border-width: 1px 0;
+	font: normal 13px/1.60 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
+	padding: 23px 0 25px;
+	margin-bottom: 20px;
+}
+section.section-content article.article .article-footnote ol{margin-bottom: 0}
+section.section-content article.article .article-footnote ol li{padding-left: 22px}
+section.section-content article.article .article-footnote ol li:before{
+	content: counter(list);
+	width: 16px;
+	font-family: "Apercu Pro", sans-serif;
+	line-height: 1.55;
+	text-align: right;
+	margin: 0 0 0 -22px;
+}
+section.section-content article.article .article-copyright{
+	font: bold italic 13px/1.58 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
+	color: #6b6b6b;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
 
 section.section-content .b-person-card{
 	float: right;
@@ -1145,7 +1184,7 @@ section.section-content .b-articles-process .article-process-item .article-info 
 section.section-content .b-articles-process .article-process-item .article-title{margin-bottom: 7px}
 section.section-content .b-articles-process .article-process-item .article-title a{color: #FFF}
 section.section-content .b-articles-process .article-process-item .article-review{
-	font: bold normal 12px/1.67 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
+	font: normal 12px/1.67 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
 }
 section.section-content .b-articles-process .article-process-item .g-author{
 	position: absolute;
@@ -1177,10 +1216,7 @@ section.section-content .b-ads-accordion .accordion-item-header a .g-time{
 }
 
 
-
-
 section.section-content footer.footer-article{padding: 0 110px}
-
 section.section-content footer.footer-article .b-article-share{margin-bottom: 50px}
 section.section-content footer.footer-article .b-article-share ul.article-share-list{}
 section.section-content footer.footer-article .b-article-share ul.article-share-list li.share-item{
@@ -1422,7 +1458,12 @@ section.section-content .b-also .also-item .article-title{margin-bottom: 10px}
 		margin-bottom: -1px;
 	}
 	section.section-conatainer aside.aside-right .b-articles-aside-tabs ul.tabs li.sel a{border-bottom-color: #e5e5e5}
-	section.section-conatainer aside.aside-right .b-articles-aside-tabs .tabs-container .tab-content{position: static}
+	section.section-conatainer aside.aside-right .b-articles-aside-tabs .tabs-container .tab-content{
+		position: static;
+		height: 170px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
 	section.section-conatainer aside.aside-right .b-articles-aside-tabs ul.articles-aside-list{
 		position: static;
 		width: auto;
@@ -1545,6 +1586,12 @@ section.section-content .b-also .also-item .article-title{margin-bottom: 10px}
 	    margin-left: -270px;
 	    margin-right: -270px;
 	}
+	section.section-content article.article .article-gallery.article-gallery-wide .fotorama-footer .fotorama-counter{width: 200px}
+	
+
+	
+	
+	
 	section.section-content article.article .b-profiles {
 	    margin-left: -270px;
 	    margin-right: -270px;
