@@ -124,14 +124,14 @@ section.section-conatainer aside.aside-right nav.nav-site-container{
 nav.nav-site-container{display: none}
 nav.nav-site-container ul.nav-list{width: 340px}
 nav.nav-site-container ul.nav-list li.nav-item{
-	border-bottom: 1px solid #434343;
+	border-bottom: 1px solid #2C2C2C;
 	font-size: 15px;
 }
 nav.nav-site-container ul.nav-list li.nav-item a{
 	display: block;
 	height: 39px;
 	line-height: 38px;
-	color: #ffffff;
+	color: #E5E5E5;
 	padding: 0 20px;
 	-webkit-transition: padding 0.2s ease 0s;
 	   -moz-transition: padding 0.2s ease 0s;
@@ -152,8 +152,8 @@ nav.nav-site-container ul.nav-list li.nav-item-top a{
 nav.nav-site-container ul.social-list{}
 nav.nav-site-container ul.social-list li{
 	float: left;
-	border-left: 1px solid #434343;
-	border-bottom: 1px solid #434343;
+	border-left: 1px solid #2C2C2C;
+	border-bottom: 1px solid #2C2C2C;
 }
 nav.nav-site-container ul.social-list li:first-child{border-left: none}
 nav.nav-site-container ul.social-list li a{
@@ -196,7 +196,7 @@ nav.nav-site-container .b-app{
 	right: 0;*/
 }
 nav.nav-site-container .b-app h4{
-	color: #FFF;
+	color: #E5E5E5;
 	margin-bottom: 22px;
 }
 nav.nav-site-container .b-app ul.app-features-list{font: bold italic 13px/1.25 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif}
@@ -876,13 +876,10 @@ section.section-content article.article ul.list-1 li:first-child{margin-top: 0}
 
 
 
-section.section-content article.article .article-simple-image{margin-bottom: 30px}
-section.section-content article.article .article-simple-image img{
-	width: 100%;
-	margin-bottom: 16px;
-}
+section.section-content article.article .article-simple-image{margin: 0 auto 30px}
+section.section-content article.article .article-simple-image img{margin-bottom: 16px}
 section.section-content article.article .article-simple-image figcaption{
-	width: 360px;
+	max-width: 360px;
 	font: bold italic 13px/1.58 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
 	color: #6b6b6b;
 	text-align: left;
@@ -909,6 +906,7 @@ section.section-content article.article .article-simple-image.simple-image-wide{
 	margin-left: -110px;
 	margin-right: -110px;
 }
+section.section-content article.article .article-simple-image.simple-image-wide img{width: 100%}
 section.section-content article.article .article-simple-image.simple-image-wide figcaption{
 	width: 400px;
 	padding: 0 110px;
@@ -1242,6 +1240,11 @@ section.section-content footer.footer-article .b-article-share ul.article-share-
 	color: #999999;
 	font-size: 13px;
 	font-style: oblique;
+	-webkit-transition: none;
+	   -moz-transition: none;
+	   	-ms-transition: none;
+		 -o-transition: none;
+			transition: none;
 }
 
 section.section-content footer.footer-article .b-article-share ul.article-share-list li.share-item a.btn-share-item .share-item-icon{

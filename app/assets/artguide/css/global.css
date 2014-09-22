@@ -536,8 +536,9 @@ ul.articles-list.articles-list-noborder li{
 	display: block;
 	border: 1px solid transparent;
 	border-bottom-color: #d4d2d0;
+	font-weight: bold;
 	height: 50px;
-	line-height: 50px;
+	line-height: 51px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
@@ -573,15 +574,15 @@ ul.articles-list.articles-list-noborder li{
 
 
 
-.ymaps-balloon__content{
+[class*="ymaps"][class*="-balloon__content"]{
 	padding: 0 !important;
 	font: normal 16px/1.25 "Apercu Pro", sans-serif !important;
 	color: #212121 !important;
 	margin-right: 0 !important;
 	text-align: left !important;
 }
-.ymaps-balloon__content h4{margin-bottom: 10px}
-.ymaps-balloon__close-button{
+[class*="ymaps"][class*="-balloon__content"] h4{margin-bottom: 10px}
+[class*="ymaps"][class*="-balloon__close-button"]{
 	background-image: url("../img/baloon-close.png") !important;
 	width: 30px !important;
 	height: 30px !important;

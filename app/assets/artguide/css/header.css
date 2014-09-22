@@ -107,6 +107,11 @@ header.header-page .toolbar ul.toolbar-list > li > a{
 	text-align: center;
 	color: #808080;
 	position: relative;
+	-webkit-transition: none;
+	   -moz-transition: none;
+	   	-ms-transition: none;
+		 -o-transition: none;
+			transition: none;
 }
 header.header-page .toolbar ul.toolbar-list > li > a:before{
 	content: "";
@@ -114,10 +119,13 @@ header.header-page .toolbar ul.toolbar-list > li > a:before{
 }
 header.header-page .toolbar ul.toolbar-list > li > a:hover,
 header.header-page .toolbar ul.toolbar-list > li > a.tool-selected:hover{
-	background-color: #404040;
+	background-color: #000;
 	color: #FFF;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-selected{background-color: #f3efec}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-selected{
+	background-color: #404040;
+	
+}
 
 
 
@@ -134,7 +142,8 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-location:before{
 	left: 50%;
 	margin: -9px 0 0 -7px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-location:hover:before{background-position: -92px -49px}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-location:hover:before,
+header.header-page .toolbar ul.toolbar-list > li > a.tool-location.tool-selected:before{background-position: -92px -49px}
 
 
 
@@ -160,7 +169,9 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:b
 	left: 50%;
 	margin: -7px 0 0 -7px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:hover:before{background-position: -14px -127px}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:hover:before,
+header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected.tool-selected:before{background-position: -14px -127px}
+
 header.header-page .toolbar ul.toolbar-list > li > a.tool-menu{
 	height: 29px;
 	font-size: 10px;
@@ -178,8 +189,11 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:before{
 	top: 17px;
 	left: 19px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover{color: #FFF}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover:before{background-position: -30px 0}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover,
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu.tool-selected{color: #FFF}
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover:before,
+header.header-page .toolbar ul.toolbar-list > li > a.tool-menu.tool-selected:before{background-position: -30px 0}
+
 
 header.header-page .toolbar ul.toolbar-list > li.location-container{position: relative}
 header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{

@@ -175,6 +175,12 @@ $(function() {
 		$(this).width(width);
 	})
 	
+	$(".article-simple-image-responsive").each(function(){
+		var width = $(this).find("img").width();
+		$(this).width(width);
+	})
+	
+	
 	
 	if($(window).width() < 1261){
 		$(".articles-aside-list").each(function(){
