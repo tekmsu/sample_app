@@ -226,8 +226,9 @@ $(function() {
 
 	PageScroll();
 	Init();
-	LargeListScroll()
-	UpDown()
+	LargeListScroll();
+	UpDown();
+	Pagination();
 });
 
 
@@ -237,6 +238,7 @@ $(window).on("scroll resize", function(){
 
 $(window).on("resize", function(){
 	Init();
+	Pagination();
 })
 
 
@@ -363,6 +365,14 @@ function _getTopBannerHeight(){
 	return banner_height;
 }
 
+
+function Pagination(){
+	var container = $(".b-pagination");
+	var count = container.find("li").length - 2;
+	var li_widht = (container.width() - count * 61 ) / 2
+	$(".b-pagination li.prev").width( li_widht + 1);
+	$(".b-pagination li.next").width( li_widht );
+}
 
 
 

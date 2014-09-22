@@ -111,6 +111,7 @@ section.section-conatainer aside.aside-right nav.nav-site-container{
 	width: 340px;
 	color: #808080;
 	padding-right: 60px;
+	padding-bottom: 390px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -189,6 +190,10 @@ nav.nav-site-container .b-app{
 	width: 170px;
 	min-height: 348px;
 	padding: 22px 150px 20px 20px;
+/*	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;*/
 }
 nav.nav-site-container .b-app h4{
 	color: #FFF;
@@ -385,9 +390,14 @@ section.section-content ul.articles-large-list.fixed-botom{
 .b-pagination ul li.next a{position: relative}
 
 .b-pagination ul li.prev,
-.b-pagination ul li.next,
+.b-pagination ul li.next{width: 308px}
+
 .b-pagination ul li.prev a,
-.b-pagination ul li.next a{width: 308px}
+.b-pagination ul li.next a{
+	float: none;
+	display: block;
+	width: auto;
+}
 
 .b-pagination ul li.prev a:before,
 .b-pagination ul li.next a:before{
@@ -1415,7 +1425,6 @@ section.section-content .b-also .also-item .article-title{margin-bottom: 10px}
 
 
 
-
 @media (max-width: 1260px) {
 	section.section-conatainer{
 		width: 920px;
@@ -1630,12 +1639,7 @@ section.section-content .b-also .also-item .article-title{margin-bottom: 10px}
 	
 	section.section-content .b-up-down header{width: 1240px}
 	section.section-content .b-up-down header.fixed{margin-left: -790px}
-	
-	.b-pagination ul li.prev,
-	.b-pagination ul li.next,
-	.b-pagination ul li.prev a,
-	.b-pagination ul li.next a{width: 468px}
-	
+		
 	section.section-content footer.footer-article{
 		padding-left: 260px;
 		padding-right: 260px;
