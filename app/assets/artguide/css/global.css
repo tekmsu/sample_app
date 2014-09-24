@@ -510,6 +510,18 @@ ul.articles-list.articles-list-noborder li{
 }
 .article-large-item .article-image img{width: 100%}
 
+.article-large-item.article-large-item-banner{
+	background: #f5f2f0;
+	min-height: 620px;
+	text-align: center;
+}
+.article-large-item.article-large-item-banner{display: none}
+.article-large-item.article-large-item-banner a{
+	display: table-cell;
+	vertical-align: middle;
+}
+.article-large-item.article-large-item-banner img{border: 1px solid #e4e1df}
+
 
 
 .g-tabs{}
@@ -524,8 +536,9 @@ ul.articles-list.articles-list-noborder li{
 	display: block;
 	border: 1px solid transparent;
 	border-bottom-color: #d4d2d0;
+	font-weight: bold;
 	height: 50px;
-	line-height: 50px;
+	line-height: 51px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
@@ -561,15 +574,15 @@ ul.articles-list.articles-list-noborder li{
 
 
 
-.ymaps-balloon__content{
+[class*="ymaps"][class*="-balloon__content"]{
 	padding: 0 !important;
 	font: normal 16px/1.25 "Apercu Pro", sans-serif !important;
 	color: #212121 !important;
 	margin-right: 0 !important;
 	text-align: left !important;
 }
-.ymaps-balloon__content h4{margin-bottom: 10px}
-.ymaps-balloon__close-button{
+[class*="ymaps"][class*="-balloon__content"] h4{margin-bottom: 10px}
+[class*="ymaps"][class*="-balloon__close-button"]{
 	background-image: url("../img/baloon-close.png") !important;
 	width: 30px !important;
 	height: 30px !important;
@@ -595,38 +608,48 @@ ul.articles-list.articles-list-noborder li{
 	}
 	
 	.article-item h4.article-title{
-		font-size: 25px;
-		margin-bottom: 4px;
+		font-size: 22px;
+		line-height: 25px;
+		margin-bottom: 7px;
 	}
 	.article-item p.article-review{
-		font-size: 19px;
-		line-height: 1.58;
+		font-size: 16px;
+		line-height: 25px;
 	}
-	
 	.article-item .article-image.article-image-mask{line-height: 156px}
 	.article-item .article-image.article-image-mask img{
 		width: 130px;
 		border-radius: 70px;
 		vertical-align: middle;
 		margin: 10px;
-	}
-	
-		
+	}	
 	.article-large-item{
 		width: 620px;
 		height: 620px;
 	}
 	.article-large-item .article-header{width: 520px}
-	.article-large-item .article-header .article-title{font-size: 25px}
+	.article-large-item .article-header .article-title{
+		font-size: 22px;
+		line-height: 25px;
+		margin-bottom: 7px;
+	}
 	.article-large-item .article-header .article-review {
-	    font-size: 19px;
-	    line-height: 1.58;
+		font-size: 16px;
+		line-height: 25px;
 	}
 	.article-large-item .article-image{
 		width: 620px;
 		height: 620px;
 	}
-
-	
 	
 }
+
+@media (max-width: 1260px) {
+	.article-large-item.article-large-item-banner{
+		display: table;
+	}
+}
+
+
+
+

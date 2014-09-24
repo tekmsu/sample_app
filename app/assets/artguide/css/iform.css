@@ -133,6 +133,12 @@
 	left: -1px;
 	right: -1px;
 }
+
+.iselect.iselect-bottom ul.iselect-options-list{
+	top: auto;
+	bottom: 39px;
+}
+
 .iselect ul.iselect-options-list li{border-top: 1px solid #313131}
 .iselect ul.iselect-options-list li:first-child{border-top: none}
 .iselect ul.iselect-options-list li a{
@@ -166,6 +172,7 @@
 
 .iselect.iselect-open{border-color: #808080}
 .iselect.iselect-open ul.iselect-options-list{display: block}
+
 .iselect.iselect-open .iselect-header{
 	background-color: #808080;
 	color: #FFF;
@@ -196,5 +203,7 @@
 
 .iselect.iselect-person.iselect-open{border-color: #599499}
 .iselect.iselect-person.iselect-open .iselect-header{background-color: #599499}
+
+
 
 

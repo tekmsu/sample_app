@@ -278,9 +278,22 @@
 				<div class="logo">
 					<a href="#"></a>
 				</div>
-				<div class="tollbar">
-					<ul>
+				<div class="toolbar">
+					<ul class="toolbar-list">
 						<li><a href="#" class="tool-land">En</a></li>
+						<li class="location-container">
+							<a id="tool-location" class="tool-location"></a>
+							<ul id="tool-locations-list" class="locations-list">
+								<li><a>Австрия</a></li>
+								<li><a>Венгрия</a></li>
+								<li><a>Германия</a></li>
+								<li><a>Дания</a></li>
+								<li><a>Испания</a></li>
+								<li><a>Италия</a></li>
+								<li><a>Китай</a></li>
+								<li><a>Россия</a></li>
+							</ul>
+						</li>
 						<li><a id="tool-search" class="tool-search"></a></li>
 						<li><a id="tool-menu" class="tool-menu">меню</a></li>
 					</ul>
@@ -655,6 +668,28 @@
 					</figure>
 				</a>
 			</li>
+			<li class="article-large-item article-large-item-banner">
+				<a href="#">
+					<img src="img/pic-14.jpg" width="298" height="498" alt="" >
+				</a>
+				<!--<header class="article-header">
+					<a class="g-tag link-interview" href="#">Интервью</a>
+					<a class="article-link" href="#">
+						<h4 class="article-title">Энди Уорхол: десять знаменит евреев ХХ века</h4>
+					</a>
+					<div class="article-review">
+						Немного фото и видео про незваных гостей, которые
+						вчера пожаловали с визитом на премьеру «Детей 404»
+					</div>
+				</header>
+				<a href="#">
+					<figure class="article-image">
+						<img src="img/pic-3.jpg" width="460" height="460" alt="" />
+					</figure>
+				</a>-->
+			</li>
+			
+			
 			<li class="article-large-item">
 				<header class="article-header">
 					<a class="g-tag link-interview" href="#">Интервью</a>
@@ -712,6 +747,21 @@
 	
 	<footer class="footer-page">
 		<div class="footer-top clearfix">
+			<div class="iselect iselect-city">
+				<div class="iselect-header"></div>
+				<input class="iselect-value" type="hidden" name="" value="" />
+				<ul class="iselect-options-list">
+					<li data-option="Австрия"><a>Австрия</a></li>
+					<li data-option="Венгрия"><a>Венгрия</a></li>
+					<li data-option="Германия"><a>Германия</a></li>
+					<li data-option="Дания"><a>Дания</a></li>
+					<li data-option="Испания"><a>Испания</a></li>
+					<li data-option="Италия"><a>Италия</a></li>
+					<li data-option="Китай"><a>Китай</a></li>
+					<li data-option="Россия" class="sel"><a>Россия</a></li>
+				</ul>
+			</div>
+			
 			<nav class="nav-bottom">
 				<ul>
 					<li><a href="#">Процесс</a></li>
