@@ -13,26 +13,11 @@ header.header-page{
 	z-index: 5;
 }
 header.header-page.fixed{
-	border-bottom-color: rgba(51,51,51,.1);
 	position: fixed;
 	top: 0;
 	left: 50%;
 	margin-left: -630px;
 	z-index: 20;
-	-webkit-background-clip: padding-box;
-	   -moz-background-clip: padding-box;
-			background-clip: padding-box;
-}
-header.header-page.fixed:after{
-	content: "";
-	display: block;
-	border-bottom: 3px solid rgba(51,51,51,.1);
-	height: 0;
-	font-size: 0;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 100%;
 }
 header.header-page .b-site-search{
 	display: none;
@@ -89,17 +74,17 @@ header.header-page .section-name{
 
 
 
-header.header-page .toolbar{
+header.header-page .tollbar{
 	float: right;
 	margin-bottom: -1px;
 }
-header.header-page .toolbar ul.toolbar-list > li{
+header.header-page .tollbar ul li{
 	float: left;
 	border-left: 1px solid #e6e6e6;
 	font-size: 17px;
 	font-weight: bold;
 }
-header.header-page .toolbar ul.toolbar-list > li > a{
+header.header-page .tollbar ul li a{
 	float: left;
 	width: 70px;
 	height: 71px;
@@ -107,72 +92,38 @@ header.header-page .toolbar ul.toolbar-list > li > a{
 	text-align: center;
 	color: #808080;
 	position: relative;
-	-webkit-transition: none;
-	   -moz-transition: none;
-	   	-ms-transition: none;
-		 -o-transition: none;
-			transition: none;
 }
-header.header-page .toolbar ul.toolbar-list > li > a:before{
+header.header-page .tollbar ul li a:before{
 	content: "";
 	background: url("../img/icons.svg") no-repeat;
 }
-header.header-page .toolbar ul.toolbar-list > li > a:hover,
-header.header-page .toolbar ul.toolbar-list > li > a.tool-selected:hover{
-	background-color: #000;
+header.header-page .tollbar ul li a:hover,
+header.header-page .tollbar ul li a.tool-selected:hover{
+	background-color: #404040;
 	color: #FFF;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-selected{
-	background-color: #404040;
-	
-}
+header.header-page .tollbar ul li a.tool-selected{background-color: #f3efec}
 
 
-
-
-
-
-header.header-page .toolbar ul.toolbar-list > li > a.tool-location{}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-location:before{
-	background-position: -92px -26px;
-	width: 14px;
-	height: 18px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -9px 0 0 -7px;
-}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-location:hover:before,
-header.header-page .toolbar ul.toolbar-list > li > a.tool-location.tool-selected:before{background-position: -92px -49px}
-
-
-
-
-
-
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search{}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search:before{
+header.header-page .tollbar ul li a.tool-search{}
+header.header-page .tollbar ul li a.tool-search:before{
 	background-position: -27px -127px;
 	width: 17px;
 	height: 17px;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -10px 0 0 -9px;
+	top: 26px;
+	left: 26px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search:hover:before{background-position: -63px -127px}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:before{
+header.header-page .tollbar ul li a.tool-search:hover:before{background-position: -63px -127px}
+header.header-page .tollbar ul li a.tool-search.tool-selected:before{
 	background-position: 0 -127px;
 	width: 13px;
 	height: 13px;
-	top: 50%;
-	left: 50%;
-	margin: -7px 0 0 -7px;
+	top: 28px;
+	left: 28px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:hover:before,
-header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected.tool-selected:before{background-position: -14px -127px}
-
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu{
+header.header-page .tollbar ul li a.tool-search.tool-selected:hover:before{background-position: -14px -127px}
+header.header-page .tollbar ul li a.tool-menu{
 	height: 29px;
 	font-size: 10px;
 	line-height: 1;
@@ -181,7 +132,7 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-menu{
 	color: #1a1a1a;
 	padding-top: 42px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:before{
+header.header-page .tollbar ul li a.tool-menu:before{
 	background-position: 0 0;
 	width: 30px;
 	height: 22px;
@@ -189,37 +140,8 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:before{
 	top: 17px;
 	left: 19px;
 }
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover,
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu.tool-selected{color: #FFF}
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu:hover:before,
-header.header-page .toolbar ul.toolbar-list > li > a.tool-menu.tool-selected:before{background-position: -30px 0}
-
-
-header.header-page .toolbar ul.toolbar-list > li.location-container{position: relative}
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
-	display: none;
-	background: #1a1a1a;
-	width: 211px;
-	font-size: 14px;
-	font-weight: normal;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 10;
-}
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li{border-top: 1px solid #313131}
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li:first-child{border-top: none}
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li a{
-	display: block;
-	color: #FFF;
-	text-decoration: none;
-	padding: 11px 12px 11px 13px;
-}
-
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li a:hover{background-color: #252525}
-
-
-
+header.header-page .tollbar ul li a.tool-menu:hover{color: #FFF}
+header.header-page .tollbar ul li a.tool-menu:hover:before{background-position: -30px 0}
 
 header.header-page .mobile-menu{display: none}
 
@@ -297,36 +219,40 @@ header.header-page a.mobile-menu:before{
 		height: 164px;
 	}
 	header.header-page .section-name{display: none}
-	header.header-page .toolbar{
+	header.header-page .tollbar{
 		width: 104px;
 		margin-bottom: 0;
 		position: absolute;
 		left: 0;
 		bottom: 0;
 	}
-	header.header-page .toolbar ul.toolbar-list > li{
+	header.header-page .tollbar ul li{
 		border: 1px solid #2b2b2b;
 		border-width: 1px 0 0;
 	}
-	header.header-page .toolbar ul.toolbar-list > li:last-child{display: none}
+	header.header-page .tollbar ul li:last-child{display: none}
 	
-	header.header-page .toolbar ul.toolbar-list > li > a{
+	header.header-page .tollbar ul li a{
 		width: 104px;
 		height: 89px;
 		line-height: 87px;
 	}
 	
-	header.header-page .toolbar ul.toolbar-list > li > a.tool-selected {background-color: #404040}
-	header.header-page .toolbar ul.toolbar-list > li > a.tool-search.tool-selected:before{background-position: -14px -127px}
+	header.header-page .tollbar ul li a.tool-selected {background-color: #404040}
 	
-	header.header-page .toolbar ul.toolbar-list > li > a.tool-location.tool-selected:before{background-position: -92px -49px}
 	
-	header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
-		top: auto;
-		left: 100%;
-		bottom: 0;
+	header.header-page .tollbar ul li a.tool-search:before{
+		top: 38px;
+		left: 44px;
 	}
-
+	header.header-page .tollbar ul li a.tool-search.tool-selected:before{
+		background-position: -14px -127px;
+		top: 42px;
+		left: 45px;
+	}
+	
+	
+	
 	header.header-page a.mobile-menu{
 		display: block;
 		float: left;
@@ -362,7 +288,6 @@ header.header-page a.mobile-menu:before{
 		position: absolute;
 		bottom: 0;
 		left: 100%;
-		overflow: hidden;
 	}
 	header.header-page .b-site-search{
 		height: 89px;
