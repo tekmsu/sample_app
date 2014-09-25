@@ -186,12 +186,6 @@
 .iselect.iselect-xsmall .iselect-header:after{right: 12px}
 
 
-
-
-
-
-
-
 .iselect.iselect-interview.iselect-open{border-color: #bd7da2}
 .iselect.iselect-interview.iselect-open .iselect-header{background-color: #bd7da2}
 
@@ -205,5 +199,13 @@
 .iselect.iselect-person.iselect-open .iselect-header{background-color: #599499}
 
 
-
-
+.iselect.iselect-date{width: auto}
+.iselect.iselect-date .iselect-dates-container{
+	display: none;
+	position: absolute;
+	top: 39px;
+	right: -1px;
+}
+.iselect.iselect-date.iselect-open .iselect-dates-container{
+	display: block;
+}

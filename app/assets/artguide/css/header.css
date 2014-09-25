@@ -87,12 +87,7 @@ header.header-page .section-name{
 
 
 
-
-
-header.header-page .toolbar{
-	float: right;
-	margin-bottom: -1px;
-}
+header.header-page .toolbar{float: right}
 header.header-page .toolbar ul.toolbar-list > li{
 	float: left;
 	border-left: 1px solid #e6e6e6;

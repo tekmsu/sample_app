@@ -111,7 +111,6 @@ section.section-conatainer aside.aside-right nav.nav-site-container{
 	width: 340px;
 	color: #808080;
 	padding-right: 60px;
-	padding-bottom: 390px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -190,10 +189,13 @@ nav.nav-site-container .b-app{
 	width: 170px;
 	min-height: 348px;
 	padding: 22px 150px 20px 20px;
-/*	position: absolute;
+
+}
+nav.nav-site-container .b-app.fixed{
+	position: absolute;
 	left: 0;
 	bottom: 0;
-	right: 0;*/
+	right: 0;
 }
 nav.nav-site-container .b-app h4{
 	color: #E5E5E5;
@@ -481,6 +483,13 @@ section.section-content article.article{
 	font-size: 19px;
 	line-height: 1.58;
 	padding: 0 110px 50px 110px;
+}
+section.section-content article.article > p > a,
+section.section-content article.article > ul a,
+section.section-content article.article > ol a{
+	border-bottom: 1px solid #dddddd;
+	color: #000;
+	
 }
 section.section-content article.article header.header-article{
 	padding-top: 70px;
@@ -1592,7 +1601,7 @@ section.section-content .b-also .also-item .article-title{margin-bottom: 10px}
 		margin-left: -270px;
 		margin-right: -270px;
 	}
-	section.section-content article.article .article-simple-image.simple-image-wide figcaption{padding-left: 260px}
+	section.section-content article.article .article-simple-image.simple-image-wide figcaption{padding-left: 270px}
 	section.section-content article.article .article-gallery .fotorama-footer .fotorama-counter{width: 420px}
 	section.section-content article.article .article-gallery.article-gallery-wide {
 	    margin-left: -270px;

@@ -594,6 +594,11 @@ ul.articles-list.articles-list-noborder li{
 
 
 
+.ui-datepicker{
+	padding: 0;
+}
+
+
 @media (min-width: 1580px) {
 	.g-tag{font-size: 11px}
 

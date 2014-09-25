@@ -29,6 +29,9 @@
 <!--[if IE]><script type='text/javascript' src='js/html5ie.js'></script><![endif]-->
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script src="js/jquery-ui-datepicker-ru.js"></script>
+
 <script src="js/jquery.maskedinput-1.3.1.min.js"></script>
 <script src="js/jquery.placeholder.js"></script>
 <script src="js/icheck.min.js"></script>
@@ -36,8 +39,6 @@
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script> <!-- 16 KB -->
-
-
 
 <script src="js/functions.js"></script>
 
@@ -351,44 +352,26 @@
 							</ul>
 						</div>
 						
-						
-						
-						
-						
-						
 						<div class="search-interval">
 							<div class="label-interval">Интервал</div>
 							
-							<div class="iselect iselect-xsmall">
-								<div class="iselect-header"></div>
-								<input class="iselect-value" type="hidden" name="" value="" />
-								<ul class="iselect-options-list">
-									<li data-option="Начало"><a>Начало</a></li>
-									<li data-option="Москва1"><a>Москва1</a></li>
-									<li data-option="Москва2"><a>Москва2</a></li>
-									<li data-option="Москва3"><a>Москва3</a></li>
-									<li data-option="Москва4"><a>Москва4</a></li>
-									<li data-option="Москва5"><a>Москва5</a></li>
-									<li data-option="Москва6"><a>Москва6</a></li>
-								</ul>
+							<div class="iselect iselect-xsmall iselect-date">
+								<div class="iselect-header">Начало</div>
+								<div class="iselect-dates-container">
+									<div class="datepicker"></div>
+								</div>
 							</div>
 							
-							<div class="iselect iselect-xsmall">
-								<div class="iselect-header"></div>
-								<input class="iselect-value" type="hidden" name="" value="" />
-								<ul class="iselect-options-list">
-									<li data-option="Конец"><a>Конец</a></li>
-									<li data-option="Москва1"><a>Москва1</a></li>
-									<li data-option="Москва2"><a>Москва2</a></li>
-									<li data-option="Москва3"><a>Москва3</a></li>
-									<li data-option="Москва4"><a>Москва4</a></li>
-									<li data-option="Москва5"><a>Москва5</a></li>
-									<li data-option="Москва6"><a>Москва6</a></li>
-								</ul>
+							<div class="iselect iselect-xsmall iselect-date">
+								<div class="iselect-header">Конец</div>
+								<div class="iselect-dates-container">
+									<div class="datepicker"></div>
+								</div>
 							</div>
 							
 						</div>
 					</fieldset>
+					
 				</form>
 			</div>
 			
