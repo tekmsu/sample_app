@@ -308,12 +308,12 @@ fieldset {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 1.4;
+	margin-right: 5px;
 
 }
 a.g-tag{
 	color: #1a1a1a;
 	border-bottom: 1px solid;
-	margin-right: 5px;
 }
 a.g-tag:hover{border-bottom-color: transparent}
 .g-tag.g-tag-large{font-size: 12px}
@@ -632,7 +632,10 @@ ul.articles-list.articles-list-noborder li{
 		width: 620px;
 		height: 620px;
 	}
-	.article-large-item .article-header{width: 520px}
+	.article-large-item .article-header{
+		padding-top: 16px;
+		width: 520px;
+	}
 	.article-large-item .article-header .article-title{
 		font-size: 22px;
 		line-height: 25px;

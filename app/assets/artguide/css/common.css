@@ -249,7 +249,7 @@ section.section-content ul.articles-large-list.fixed-botom{
 	right: 0;
 	margin-bottom: 130px;
 }
-
+section.section-content ul.articles-large-list li.article-large-item:hover .article-header a.article-link{color: #CCC}
 
 
 .b-section-search{}

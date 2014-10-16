@@ -210,34 +210,37 @@ $(function() {
 	}
 	
 	
+	if($('.fotorama').length){
 	
+		$('.fotorama').each(function(){
+		 	var $fotoramaDiv = $(this).fotorama();
+		    var fotorama = $fotoramaDiv.data('fotorama');
+		    
+			var fotoramaContainer =  $(this).closest(".article-gallery");
+			var fotoramaCaption = fotoramaContainer.find(".fotorama-caption");
+			var fotoramaCounter = fotoramaContainer.find(".fotorama-counter");
+			fotoramaCaption.text(fotorama.activeFrame.caption);
+			fotoramaCounter.text((fotorama.activeIndex + 1) + ' / ' + fotorama.size);
+			
+			fotoramaContainer.find(".fotorama-container").append("<div class='fotorama_custom__arr fotorama_custom__arr--prev'></div>");
+			fotoramaContainer.find(".fotorama-container").append("<div class='fotorama_custom__arr fotorama_custom__arr--next'></div>");
+			
+		    $('.fotorama_custom__arr--prev', fotoramaContainer).on("click", function () {
+		        fotorama.show('<');
+		 	});
 	
-
-
-    var $fotoramaDiv = $('.fotorama').fotorama();
-    if($fotoramaDiv.length > 0){
-	    var fotorama = $fotoramaDiv.data('fotorama');
-
-	    $('#fotorama-caption').text(fotorama.activeFrame.caption);
-	    $('#fotorama-counter').text((fotorama.activeIndex + 1) + ' / ' + fotorama.size);
-
-	    if ($('.fotorama_custom__arr').length > 0)
-	        $('.fotorama_custom__arr').remove();
-
-	    $("<div class='fotorama_custom__arr fotorama_custom__arr--prev'></div>").appendTo(".fotorama-container");
-	    $("<div class='fotorama_custom__arr fotorama_custom__arr--next'></div>").appendTo(".fotorama-container");
-
-	    $('.fotorama_custom__arr--prev').click(function () {
-	        fotorama.show('<');
-	    });
-
-	    $('.fotorama_custom__arr--next').click(function () {
-	        fotorama.show('>');
-	    });
+		    $('.fotorama_custom__arr--next', fotoramaContainer).on("click", function () {
+		        fotorama.show('>');
+		    });
+		
+		})
 
 		$('.fotorama').on('fotorama:show', function (e, fotorama, direct) {
-			$('#fotorama-caption').text(fotorama.activeFrame.caption);
-			$('#fotorama-counter').text((fotorama.activeIndex + 1) + ' / ' + fotorama.size);
+			var container = $(this).closest(".article-gallery");
+			var caption = container.find(".fotorama-caption");
+			var counter = container.find(".fotorama-counter");
+			caption.text(fotorama.activeFrame.caption);
+			counter.text((fotorama.activeIndex + 1) + ' / ' + fotorama.size);
 		})
 	}
 	

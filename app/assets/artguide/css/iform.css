@@ -161,7 +161,7 @@
 .iselect ul.iselect-options-list li .icheckbox_radio{
 	float: left;
 	border-color: #484848;
-	margin: 2px 0 0 -21px;
+	margin: 1px 0 0 -21px;
 }
 /*.iselect ul.iselect-options-list li .icheckbox_checkbox.checked:before,
 .iselect ul.iselect-options-list li .icheckbox_radio.checked:before{

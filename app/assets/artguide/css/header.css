@@ -101,6 +101,7 @@ header.header-page .toolbar ul.toolbar-list > li > a{
 	line-height: 69px;
 	text-align: center;
 	color: #808080;
+	margin-left: -1px;
 	position: relative;
 	-webkit-transition: none;
 	   -moz-transition: none;
@@ -197,6 +198,7 @@ header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations
 	width: 211px;
 	font-size: 14px;
 	font-weight: normal;
+	margin-left: -1px;
 	position: absolute;
 	top: 100%;
 	left: 0;
