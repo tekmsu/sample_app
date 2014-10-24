@@ -285,16 +285,18 @@
 						<li><a href="#" class="tool-land">En</a></li>
 						<li class="location-container">
 							<a id="tool-location" class="tool-location"></a>
-							<ul id="tool-locations-list" class="locations-list">
-								<li><a>Австрия</a></li>
-								<li><a>Венгрия</a></li>
-								<li><a>Германия</a></li>
-								<li><a>Дания</a></li>
-								<li><a>Испания</a></li>
-								<li><a>Италия</a></li>
-								<li><a>Китай</a></li>
-								<li><a>Россия</a></li>
-							</ul>
+							<div id="tool-locations-container" class="tool-locations-container">
+								<ul  class="locations-list">
+									<li><a>Австрия</a></li>
+									<li><a>Венгрия</a></li>
+									<li><a>Германия</a></li>
+									<li><a>Дания</a></li>
+									<li><a>Испания</a></li>
+									<li><a>Италия</a></li>
+									<li><a>Китай</a></li>
+									<li><a>Россия</a></li>
+								</ul>
+							</div>
 						</li>
 						<li><a id="tool-search" class="tool-search"></a></li>
 						<li><a id="tool-menu" class="tool-menu">меню</a></li>
@@ -344,70 +346,73 @@
 						
 						<div class="iselect iselect-event">
 							<div class="iselect-header">Тип мероприятия</div>
-							<ul class="iselect-options-list">
+							<ul id="values-checkbox-list" class="iselect-options-list">
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="all">
 									  	Все мероприятия
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="auctions" >
 									  	Аукционы
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="lectures" >
 									  	Лекции
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="discussions" >
 									  	Дискуссии и кинопоказы
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="children" >
 									  	Для детей
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="art-weekend" >
 									  	Art-Weekend
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="Photobiennale" >
 									  	Фотобиеннале 2014
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="vanguard" >
 									  	Проекции авангарда
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="manifesta" >
 									  	Mанифеста 10
 									</label>
 								</li>
 								<li>
 									<label class="icheckbox icheckbox-event">
-										<input type="checkbox" name="" >
+										<input type="checkbox" name="some-event-name" >
 									  	IV Московская международная биеннале молодого искусства
 									</label>
 								</li>
 							</ul>
 						</div>
 					</fieldset>
+					
+					<div  class="b-values-checked-list clearfix" id="values-checked-list"></div>
+					
 					<fieldset class="fieldset-search-params clearfix">
 						<label class="icheckbox icheckbox-event">
 							<input type="checkbox" name="" >

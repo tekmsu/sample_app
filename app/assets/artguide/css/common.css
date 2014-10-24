@@ -184,6 +184,33 @@ nav.nav-site-container ul.social-list li.social-fb a:hover:before{background-pos
 nav.nav-site-container ul.social-list li.social-vk a:hover:before{background-position: -23px -47px}
 nav.nav-site-container ul.social-list li.social-tw a:hover:before{background-position: -46px -47px}
 nav.nav-site-container ul.social-list li.social-rss a:hover:before{background-position: -69px -47px}
+
+nav.nav-site-container ul.nav-list li.subscription{
+	padding: 22px 20px 2px;
+}
+nav.nav-site-container ul.nav-list li.subscription h4{
+	 color: #e5e5e5;
+	 margin-bottom: 16px;
+}
+nav.nav-site-container ul.nav-list li.subscription form{
+	position: relative;
+}
+nav.nav-site-container ul.nav-list li.subscription input[type="text"],
+nav.nav-site-container ul.nav-list li.subscription input[type="search"]{
+	background: none;
+	border-color: #2c2c2c;
+	padding-right: 136px;
+}
+nav.nav-site-container ul.nav-list li.subscription .btn{
+	background-color: #202020;
+	border: 1px solid #2c2c2c;
+	line-height: 39px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
 nav.nav-site-container .b-app{
 	background: url("../img/app-ios.png") no-repeat 100% 25px;
 	width: 170px;
@@ -292,6 +319,31 @@ section.section-content ul.articles-large-list li.article-large-item:hover .arti
 	border-top: 1px solid #e6e6e6;
 	margin: 20px -20px 0 0;
 	padding-top: 10px;
+}
+
+.b-values-checked-list{
+	display: none;
+	margin: 28px 0 -10px;
+}
+.b-values-checked-list a{
+	float: left;
+	font: bold italic 14px/1.25 "Fedra Serif A Pro", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 12px 8px 0;
+}
+.b-values-checked-list a:after{
+	content: "";
+	display: inline-block;
+	background: url("../img/i-remove.png") no-repeat -12px 0;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+.b-values-checked-list a:hover:after{background-position: 0 0}
+
+.b-values-checked-list a.clear-values{
+	float: right;
+	font: 14px/1.25 "Apercu Pro",sans-serif;
 }
 
 
@@ -1106,9 +1158,11 @@ section.section-content article.article .article-copyright{
 	margin-bottom: 30px;
 }
 
-
-
-
+section.section-content article.article-noenglish{
+	text-align: center;
+	padding: 100px 0 80px;
+}
+section.section-content article.article-noenglish h1{margin-bottom: 100px}
 
 
 

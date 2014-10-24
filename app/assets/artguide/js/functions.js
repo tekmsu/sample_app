@@ -14,7 +14,38 @@ $(function() {
 	$('input').iCheck({
 		checkboxClass: 'icheckbox_checkbox',
 		radioClass: 'icheckbox_radio'
-	});
+	})
+	
+	$('#values-checkbox-list input[name!="all"]').on('ifToggled' , function(){
+		var links = "";
+		$("#values-checkbox-list input[type='checkbox'][name!='all']").each(function(){
+			if($(this).is(":checked")){
+				var text = $(this).closest("label").text().trim();
+				links += "<a data-checked='" + $(this).attr("name") + "'>" + text + "</a>";
+			}
+		})
+		$("#values-checked-list").hide().empty();
+		if(links){
+			links = "<a id='clear-values' class='clear-values'>Сбросить все</a>" + links;
+			$("#values-checked-list").append(links).show();
+		}
+					
+		//values-check-list
+		//console.log($(this).attr("name"))
+	})
+	
+	$('#values-checkbox-list input[name="all"]').on('ifChecked' , function(){
+		$('#values-checkbox-list input[name!="all"]').iCheck('check');
+	})
+	$('#values-checkbox-list input[name="all"]').on('ifUnchecked' , function(){
+		$('#values-checkbox-list input[name!="all"]').iCheck('uncheck');
+	})
+	
+//	.on('ifUnchecked', function(){
+//		console.log("ifUnchecked")
+//	});
+//	
+	
 
 	$(document)
 	
@@ -36,7 +67,7 @@ $(function() {
 		$("#nav-site").hide();
 		$("#tool-menu, #mobile-menu").removeClass("tool-selected");
 		$("#tool-location").removeClass("tool-selected");
-		$("#tool-locations-list").hide();
+		$("#tool-locations-container").hide();
 		
 		
 		$("#site-search").slideToggle(200).find("input:first").focus();	
@@ -50,7 +81,7 @@ $(function() {
 		$("#up-down .header-up-down").removeClass("fixed-large");
 		
 		$("#tool-location").removeClass("tool-selected");
-		$("#tool-locations-list").hide();
+		$("#tool-locations-container").hide();
 		
 		
 		$("#nav-site").toggle();
@@ -68,12 +99,9 @@ $(function() {
 		
 	
 		$(this).toggleClass("tool-selected");
-		$("#tool-locations-list").toggle();
+		$("#tool-locations-container").toggle();
 
 	})
-	
-	
-	
 	
 	.on(clickEvent,".btn-show-gallery", function(){
 		var header_height = $(".header-article-event").height();
@@ -138,6 +166,21 @@ $(function() {
 			$(".iselect").removeClass("iselect-open");
 		}
 	})
+	
+	.on(clickEvent, "#values-checked-list a[data-checked]", function(){
+		var event = $(this).data("checked");
+		$(this).remove();
+		$('#values-checkbox-list input[name="' + event + '"]').iCheck('uncheck');		
+	})
+	
+	.on(clickEvent, "#values-checked-list a.clear-values", function(){
+		$('#values-checkbox-list input[name="all"]').iCheck('check').iCheck('uncheck');		
+	})
+	
+	
+	
+	
+	
 	
 
 	$(".datepicker").datepicker({
@@ -251,16 +294,19 @@ $(function() {
 	UpDown();
 	Pagination();
 	AppPosition();
+	ContainerHeight();
 });
 
 
 $(window).on("scroll resize", function(){
 	PageScroll();
 	AppPosition();
+	
 });
 
 $(window).on("resize", function(){
 	Pagination();
+	ContainerHeight();
 })
 
 
@@ -399,6 +445,12 @@ function AppPosition(){
 	( container_height  > content_height ) ? container.find(".b-app").addClass("fixed") : container.find(".b-app").removeClass("fixed");
 }
 
+function ContainerHeight(){
+	var element = $("section.section-content");
+	var element_top = element.offset().top;
+	var element_bottom = $("footer.footer-page").height();
+	element.css("min-height",$(window).height() - element_top - element_bottom);
+}
 
 
 ymaps.ready(map_init);

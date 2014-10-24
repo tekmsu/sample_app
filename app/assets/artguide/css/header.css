@@ -192,17 +192,25 @@ header.header-page .toolbar ul.toolbar-list > li > a.tool-menu.tool-selected:bef
 
 
 header.header-page .toolbar ul.toolbar-list > li.location-container{position: relative}
-header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
+header.header-page .toolbar ul.toolbar-list > li.location-container .tool-locations-container{
 	display: none;
-	background: #1a1a1a;
-	width: 211px;
-	font-size: 14px;
-	font-weight: normal;
+	width: 210px;
+	height: 119px;
 	margin-left: -1px;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	z-index: 10;
+	overflow: hidden;
+}
+header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
+	background: #1a1a1a;
+	width: 235px;
+	height: 119px;
+	overflow-y: scroll;
+	font-size: 14px;
+	font-weight: normal;
+
 }
 header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li{border-top: 1px solid #313131}
 header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list li:first-child{border-top: none}
@@ -318,10 +326,10 @@ header.header-page a.mobile-menu:before{
 	
 	header.header-page .toolbar ul.toolbar-list > li > a.tool-location.tool-selected:before{background-position: -92px -49px}
 	
-	header.header-page .toolbar ul.toolbar-list > li.location-container ul.locations-list{
+	header.header-page .toolbar ul.toolbar-list > li.location-container .tool-locations-container{
 		top: auto;
 		left: 100%;
-		bottom: 0;
+		bottom: -1px;
 	}
 
 	header.header-page a.mobile-menu{
