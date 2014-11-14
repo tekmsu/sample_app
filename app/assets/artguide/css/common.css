@@ -169,7 +169,8 @@ nav.nav-site-container ul.social-list li a{
 nav.nav-site-container ul.social-list li a:hover{background-color: #262626}
 nav.nav-site-container ul.social-list li a:before{
 	content: "";
-	background: url("../img/icons.svg") no-repeat;
+	background: url("../img/icons.png") no-repeat;
+	background: none, url("../img/icons.svg") no-repeat;
 	width: 22px;
 	height: 22px;
 	position: absolute;
@@ -569,7 +570,10 @@ section.section-content article.article header.header-article .article-info .inf
 section.section-content article.article header.header-article .article-info .info-item.info-view:before{
 	content: "";
 	float: left;
-	background: url("../img/icons.svg") no-repeat -80px -127px;
+	background: url("../img/icons.png") no-repeat;
+	background: none, url("../img/icons.svg") no-repeat;
+	background-repeat: no-repeat;
+	background-position: -80px -127px;
 	width: 13px;
 	height: 6px;
 	margin: 3px 0 0 -22px;
@@ -579,7 +583,10 @@ section.section-content article.article header.header-article .article-info .inf
 section.section-content article.article header.header-article .article-info .info-item.info-comments:before{
 	content: "";
 	float: left;
-	background: url("../img/icons.svg") no-repeat -80px -134px;
+	background: url("../img/icons.png") no-repeat;
+	background: none, url("../img/icons.svg") no-repeat;
+	background-repeat: no-repeat;
+	background-position: -80px -134px;
 	width: 11px;
 	height: 9px;
 	margin: 2px 0 0 -17px;
@@ -1318,7 +1325,8 @@ section.section-content footer.footer-article .b-article-share ul.article-share-
 }
 section.section-content footer.footer-article .b-article-share ul.article-share-list li.share-item a.btn-share-item .share-item-icon:before{
 	content: "";
-	background: url("../img/icons.svg") no-repeat;
+	background: url("../img/icons.png") no-repeat;
+	background: none, url("../img/icons.svg") no-repeat;
 	width: 18px;
 	height: 18px;
 	position: absolute;
