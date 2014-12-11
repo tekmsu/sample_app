@@ -177,6 +177,44 @@ $(function() {
 		$('#values-checkbox-list input[name="all"]').iCheck('check').iCheck('uncheck');		
 	})
 	
+	.on(clickEvent, "#experts-list .list-item-toggle", function(){
+		if($(this).closest(".list-item").hasClass("list-item-sel")){
+			$("#experts-list .list-item-content").slideUp(300);
+			$("#experts-list .list-item").removeClass("list-item-sel");
+		}else{
+			$("#experts-list .list-item-content").slideUp(300);
+			$("#experts-list .list-item").removeClass("list-item-sel");
+			$(this).closest(".list-item")
+				.addClass("list-item-sel")
+				.find(".list-item-content").slideDown(300);
+		}
+	})
+	
+	.on(clickEvent, "#experts-list .close-link", function(){
+		$(this).closest(".list-item-content").slideUp(300);
+		$("#experts-list .list-item").removeClass("list-item-sel");
+	})
+	
+	.on(clickEvent, "#experts-filter-list-show", function(){
+		var filter = $(this).data("filter");
+		var label =  $(this).data("label-" + filter);
+		console.log(label)
+		$(this).text(label);
+		(filter == "show") ? $(this).data("filter","hide") : $(this).data("filter","show");
+		$("#experts-filter-list").slideToggle(300);
+		
+		
+//		experts-filter-list
+//		
+//		
+//		$(this).closest(".list-item-content").slideUp(300);
+	})
+	
+	
+	
+	
+	
+	
 	
 	
 	

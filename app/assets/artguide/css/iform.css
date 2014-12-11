@@ -115,6 +115,7 @@
 .iselect .iselect-header:after{
 	content: "";
 	background: url("../img/arrow-select.png") no-repeat 0 -6px;
+	background-image: url("../img/arrow-select-small.png")\0/;
 	background-size: 16px 12px;
 	width: 8px;
 	height: 6px;
@@ -179,8 +180,9 @@
 }
 .iselect.iselect-open .iselect-header:after{background-position: -8px -6px}
 
-.iselect.iselect-small{width: 168px}
 .iselect.iselect-xsmall{width: 88px}
+.iselect.iselect-small{width: 168px}
+.iselect.iselect-large{width: 223px}
 
 .iselect.iselect-xsmall .iselect-header{padding-right: 24px}
 .iselect.iselect-xsmall .iselect-header:after{right: 12px}
@@ -197,6 +199,22 @@
 
 .iselect.iselect-person.iselect-open{border-color: #599499}
 .iselect.iselect-person.iselect-open .iselect-header{background-color: #599499}
+
+.iselect.iselect-dark{
+	border-color: #2a2a2a;
+}
+.iselect.iselect-dark .iselect-header{
+	background-color: #2a2a2a;
+	color: #FFF;
+}
+.iselect.iselect-dark .iselect-header:after{
+	background-position: -8px -6px;
+}
+
+
+
+
+
 
 
 .iselect.iselect-date{width: auto}
